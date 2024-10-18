@@ -1,42 +1,54 @@
 import "./App.css";
-import imagen from "./aulaImagen.png";
+import imagenTuya from "./iconos/aulaImagen.png";
+import react from "./iconos/react.png";
+import spring from "./iconos/spring.png";
 
 function App() {
   return (
-    <div className="flex flex-col justify-center mt-5 ">
-      <div className="flex flex-col sm:flex-row items-center mx-auto">
+    <div id="General" className="flex flex-col justify-center mt-5 bc-">
+      <div
+        id="ImagenYNombre"
+        className="flex flex-col sm:flex-col items-center mx-auto"
+      >
         <img
-          src={imagen}
-          alt="Imagen del aula"
+          src={imagenTuya}
+          alt="Imagen"
           className="rounded-full w-40 h-40 duration-100 delay-75 hover:scale-x-110 hover:scale-y-110"
         />
-        <h1 className="ml-5 font-bold text-2xl">Aula de software libre</h1>
+        <h1 className="ml-5 font-bold text-6xl">Aula de software libre</h1>
       </div>
 
-      <div className="flex flex-col justify-center mt-20">
-        <h2 className="font-bold text-lg ">Quienes somos</h2>
-        <p className="mt-5 mb-5">
-          En el Aula de Software Libre de la FP de Córdoba, nos dedicamos a
-          fomentar el uso y desarrollo de herramientas tecnológicas basadas en
-          software libre y de código abierto. Nuestro objetivo es proporcionar
-          una formación práctica y accesible en tecnologías que permiten la
-          colaboración y la innovación sin las restricciones de licencias
-          privativas.
+      <div
+        id="QuienSoy"
+        className="flex justify-center flex-col mx-auto mt-32 mr-[30%] ml-[30%]"
+      >
+        <h2 className="font-bold text-lg mx-auto">Quien soy</h2>
+        <p class="mt-5 mb-5 text-center">
+          Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore
+          Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore
+          Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore Ipsum Lore
+          Ipsum Lore Ipsum Lore Ipsum
         </p>
-        <p className="mt-5 mb-5">
-          A través de proyectos colaborativos, aprendemos a utilizar sistemas,
-          tecnologías y aplicaciones libres para el desarrollo de software, la
-          gestión de servidores, y el diseño de soluciones tecnológicas. También
-          promovemos una filosofía de aprendizaje colectivo, donde el
-          intercambio de conocimientos y la contribución a la comunidad son
-          esenciales.
-        </p>
-        <p className="mt-5 mb-5">
-          Fomentamos el espíritu emprendedor y la autonomía técnica, capacitando
-          a los estudiantes para resolver problemas tecnológicos con soluciones
-          abiertas y escalables, siempre respetando los principios de libertad,
-          privacidad y cooperación que definen al software libre.
-        </p>
+      </div>
+
+      <div
+        id="Tecnologias"
+        className="flex justify-center flex-col mx-auto mt-32 mr-[30%] ml-[30%]"
+      >
+        <h2 className="font-bold text-lg mx-auto">Tecnologías</h2>
+
+        <div id="Logos" className="flex flex-row">
+          <img
+            src={react}
+            alt="Imagen"
+            className="duration-100 h-32 w-56 delay-75 hover:scale-x-110 hover:scale-y-110"
+          />
+          <img
+            src={spring}
+            alt="Imagen"
+            className="duration-100 h-20 w-20 delay-75 hover:scale-x-110 hover:scale-y-110"
+          />
+        </div>
       </div>
     </div>
   );
