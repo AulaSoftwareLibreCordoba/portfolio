@@ -10,16 +10,16 @@ const Card = ({
   despliegue = "https://www.example.com",
 }) => {
   return (
-    <div id="projectos" className="flex flex-col">
-      <p>{titulo}</p>
-      <img src={urlImagen} alt="imagen del proyecto" />
-      <p>{texto}</p>
-      <a href={urlGithub}>
-        <img src={github} alt="Imagen" className="h-10 w-10 mt-10" />
-      </a>
+    <div id="projectos" className="flex flex-col justify-center mx-auto">
+      <h3 className="mx-auto font-bold text-xl">{titulo}</h3>
+      <img src={urlImagen} alt="imagen del proyecto" className="" />
+      <p className="mx-auto">{texto}</p>
 
+      <a href={urlGithub}>
+        <img src={github} alt="Imagen" className="h-10 w-10 mt-10 mx-auto" />
+      </a>
       <a href={despliegue}>
-        <img src={netliFy} alt="Imagen" className="h-10 w-10 mt-10" />
+        <img src={netliFy} alt="Imagen" className="h-10 w-10 mt-10 mx-auto" />
       </a>
     </div>
   );
